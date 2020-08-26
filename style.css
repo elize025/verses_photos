@@ -13,16 +13,21 @@ nav img{
   width: 360px;
   height: 120px;
 }
-div{
-  position: absolute;
+.grid-container {
   display: grid;
-  top: 50px;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
   text-align: center;
 }
 
-table img{
-  width: 350px;
-  height: 280px;
-  padding: 8px 8px;
-  text-align: center;
+.grid-container img{
+  position: absolute;
+  size: 1000px;
 }
